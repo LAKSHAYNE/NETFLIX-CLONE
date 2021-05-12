@@ -1,16 +1,10 @@
 .first__container{
- margin-bottom: 10px;
+position: relative;
  flex-direction: column;
  text-align: center;
+ width: 100%;
+ background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg")
 }
-.background__imgDiv{
-    background-color: black;
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%; 
-}
-
 
 .header {
     padding: 10px 20px 0 20px;
@@ -21,23 +15,12 @@
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    z-index: 0;
   }
   
-  .background__image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    position: absolute;
-    opacity: 0.5;
-  }
+  
   
   .header__logo {
+    margin-left: 20px;
     width: 100px;
     object-fit: contain;
   }
@@ -45,20 +28,18 @@
     display: flex;
   }
   .signIn {
-      border-color: black;
+    border-color: black;
     background-color: #e50914;
     margin-left: 10px;
     margin-right: 10px;
   }
   .middle__part{
+    padding:75px ;
     position: relative;
     width: 100%;
-    padding: 75px 0;
     max-width: 950px;
     margin: 0 auto;
     text-align: center;
-
-    z-index: 1;
   }
   .heading{
       color:white
@@ -70,15 +51,25 @@
     min-width: 450px;
     height: 60px!important;
     max-width: 950px;
-    grid-row-gap: 10px;
+    grid-row-gap: 30px;
     margin: 10px;
   }
   .email__input{
+    padding-left: 10px;
+    min-height: 48px;
     border:solid 1px #8c8c8c;
     height: 100%;
     width: 100%;
   }
+  h1{
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
   h2{
+      display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -94,7 +85,9 @@ h3{
     margin-inline-end: 0px;
 }
 .getStarted__button{
-    font-size: 29px;
+    max-width: 250px;
+    margin: 0;
+    font-weight: 500;
     height: 100%;
     width: 100%;
     border: 0;

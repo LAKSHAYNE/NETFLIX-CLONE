@@ -6,12 +6,13 @@ import { Button,Row,Col } from "react-bootstrap";
 function FirstContainer() {
   return (
     <div className="first__container">
-      <div className="background__imgDiv">
+      {/* <div className="background__imgDiv">
         <img
           className="background__image"
           src="https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg"
         />
-      </div>
+      </div> */}
+      <div className="header__wrapper">
       <div className="header">
         <img
           className="header__logo"
@@ -37,6 +38,7 @@ function FirstContainer() {
             LOGIN
           </Button>
         </div>
+      </div>
       </div>
       <div className="middle__part">
         <h1 className="heading">Unlimited movies, TV</h1>
