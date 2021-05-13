@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FirstContainer from './FirstContainer';
 import SecondContainer from './SecondContainer';
+import ThirdContainer from './ThirdContainer';
 
 
 
@@ -14,6 +15,7 @@ function App() {
           <Route name="/">
             <FirstContainer />
             <SecondContainer/>
+            <ThirdContainer/>
           </Route>
         </Switch>
       </div>
