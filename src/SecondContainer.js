@@ -20,7 +20,7 @@ function SecondContainer() {
             src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
           />
           <div className="videoDiv">
-            <video autoPlay playsInline muted loop>
+            <video className="sac_video" autoPlay playsInline muted loop>
               <source
                 src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
                 type="video/mp4"

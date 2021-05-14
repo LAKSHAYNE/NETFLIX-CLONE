@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FirstContainer from './FirstContainer';
 import SecondContainer from './SecondContainer';
 import ThirdContainer from './ThirdContainer';
+import ForthContainer from './ForthContainer';
 
 
 
@@ -16,6 +17,7 @@ function App() {
             <FirstContainer />
             <SecondContainer/>
             <ThirdContainer/>
+            <ForthContainer/>
           </Route>
         </Switch>
       </div>

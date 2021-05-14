@@ -19,6 +19,7 @@
 }
 
 .TVimage{
+    position: relative;
     z-index: 2;
     height: auto;
     border: 0px;
@@ -61,5 +62,6 @@ video{
     overflow: hidden;
 }
 .TVimageDiv{
+    position: relative;
     z-index: 2;
 }

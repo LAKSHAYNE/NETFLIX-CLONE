@@ -1,0 +1,29 @@
+.forth__container{
+    color:white;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    margin-top: 10px;
+}
+.animation__content{
+    position: relative;
+}
+.photos{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.video__div{
+    top: 34%;
+    position: absolute;
+    transform: translate(31%,-55%);
+    width: 58%;
+}
+.sac__video{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+}
