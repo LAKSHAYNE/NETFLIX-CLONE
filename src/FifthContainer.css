@@ -1,0 +1,10 @@
+.fifth__container{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.child__img{
+    width: 100%;
+}

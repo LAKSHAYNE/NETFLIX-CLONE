@@ -5,8 +5,8 @@ import FirstContainer from './FirstContainer';
 import SecondContainer from './SecondContainer';
 import ThirdContainer from './ThirdContainer';
 import ForthContainer from './ForthContainer';
-
-
+import FifthContainer from './FifthContainer';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -18,6 +18,8 @@ function App() {
             <SecondContainer/>
             <ThirdContainer/>
             <ForthContainer/>
+            <FifthContainer/>
+            <Footer/>
           </Route>
         </Switch>
       </div>
