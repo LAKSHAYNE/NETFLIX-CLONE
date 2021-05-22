@@ -1,0 +1,13 @@
+.content{
+    margin: 0;
+    padding: 0;
+}
+
+.upper__section{
+    background-color: black;
+    height: 350px;
+}
+.top__carousel{
+    padding: 0;
+    width: 100%;
+}

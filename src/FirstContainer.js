@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FirstContainer.css";
 import LanguageIcon from "@material-ui/icons/Language";
 import { Button,Row,Col } from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
+
 
 function FirstContainer() {
+
+  const [email, setEmail] = useState("");
+  const history = useHistory();
+
   return (
     <div className="first__container">
       <div className="background__imgDiv">
@@ -53,6 +59,8 @@ function FirstContainer() {
               type="text"
               placeholder="Email Address"
               className="email__input"
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}
             />
           </Col>
           <Col md={3}>
@@ -60,6 +68,7 @@ function FirstContainer() {
               className="getStarted__button"
               variant="primary"
               style={{ backgroundColor: "#e50914" }}
+              onClick={()=>history.push("/Signup")}
             >
               Get Started &#62;
             </Button>

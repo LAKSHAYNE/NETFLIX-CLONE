@@ -1,0 +1,35 @@
+.signup{
+    position: relative;
+    background-color: black;
+    height:100vh;
+    text-align: center;
+    color: white;
+}
+.signup__container{
+    max-width: 523px;
+    position: relative;
+    padding: 80px;
+    border-radius: 10px;
+    border: 12px solid rgba(255,255,255,.25);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo__img{
+    object-fit: contain;
+    height:50px;
+}
+.input__fields{
+    text-align: start;
+    margin-top: 20px;
+}
+
+.input__fields input{
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}

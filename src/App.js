@@ -7,13 +7,21 @@ import ThirdContainer from './ThirdContainer';
 import ForthContainer from './ForthContainer';
 import FifthContainer from './FifthContainer';
 import Footer from './Footer';
+import Signup from './Signup';
+import Content from './Content';
 
 function App() {
   return (
     <Router>
       <div className="app" style={{backgroundColor: "#222222",}}>
-        <Switch>
-          <Route name="/">
+        <Switch initialRouteName="/">
+        <Route path="/Signup">
+            <Signup/>
+          </Route>
+          <Route path="/content">
+            <Content/>
+          </Route>
+          <Route path="/">
             <FirstContainer />
             <SecondContainer/>
             <ThirdContainer/>
