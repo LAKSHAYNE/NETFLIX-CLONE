@@ -3,6 +3,7 @@ import "./FirstContainer.css";
 import LanguageIcon from "@material-ui/icons/Language";
 import { Button,Row,Col } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
+import Header from "./Header";
 
 
 function FirstContainer() {
@@ -18,34 +19,7 @@ function FirstContainer() {
           src="https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg"
         />
       </div>
-      <div className="header__wrapper">
-      <div className="header">
-        <img
-          className="header__logo"
-          src="https://www.freepnglogos.com/uploads/netflix-tv-logo-png-9.png"
-        />
-        <div className="header__options ">
-          <Button
-            style={{
-              backgroundColor: "transparent",
-              borderColor: "white",
-              borderRadius: "2px",
-              marginLeft: "10px",
-              marginRight: "10px",
-            }}
-          >
-            <LanguageIcon style={{ verticalAlign: "middle" }} /> English
-          </Button>
-          <Button
-            className="signIn"
-            variant="primary"
-            style={{ backgroundColor: "#e50914" }}
-          >
-            LOGIN
-          </Button>
-        </div>
-      </div>
-      </div>
+      <Header/>
       <div className="middle__part">
         <h1 className="heading">Unlimited movies, TV</h1>
         <h1 className="heading">shows and more.</h1>

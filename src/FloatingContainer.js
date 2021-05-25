@@ -5,9 +5,8 @@ function FloatingContainer(props) {
   return (
     <div style={{width:"100%"}}>
       <Row className="floating__container" style={{marginRight:"10px",marginLeft:"10px"}}>
-      <Col md={6}>
+      <Col className="container__img" md={6}>
       <img
-        className="container__img"
         src={props.image}
       />
       </Col>

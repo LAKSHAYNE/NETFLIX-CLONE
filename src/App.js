@@ -9,6 +9,7 @@ import FifthContainer from './FifthContainer';
 import Footer from './Footer';
 import Signup from './Signup';
 import Content from './Content';
+import VideoPage from './VideoPage';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/content">
             <Content/>
+          </Route>
+          <Route path="/VideoPage/:anime/:url">
+            <VideoPage/>
           </Route>
           <Route path="/">
             <FirstContainer />

@@ -3,10 +3,12 @@ import TopCarousel from './TopCarousel';
 import "./Content.css";
 import FloatingContainer from './FloatingContainer';
 import Footer from './Footer';
+import Header from './Header';
 
 function Content() {
     return (
         <div style={{postion:"relative"}} className="content">
+        <Header/>
             <div style={{postion:"relative"}} className="upper__section">
                 <TopCarousel className="top__carousel"/>
             </div>
