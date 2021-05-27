@@ -8,6 +8,22 @@
     height: 350px;
 }
 .top__carousel{
-    padding: 0;
     width: 100%;
+}
+.search__bar{
+    padding: 10px;
+    display: flex;
+    background-color: black;
+    margin-top:5px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+.search__bar input{
+    width:100%;
+}
+.search__bar Button{
+    width: 30%;
+    border-radius: 0;
+    margin: 0;
+    border-color: black;
 }

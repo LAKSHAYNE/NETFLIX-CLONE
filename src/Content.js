@@ -1,14 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TopCarousel from './TopCarousel';
 import "./Content.css";
 import FloatingContainer from './FloatingContainer';
 import Footer from './Footer';
 import Header from './Header';
+import { Button,Row,Col } from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
 
 function Content() {
+    const history = useHistory();
+    const [search, setSearch] = useState("")
     return (
         <div style={{postion:"relative"}} className="content">
         <Header/>
+        <form onSubmit={()=>{history.push("/SearchResult/"+search)}} className="search__bar">
+        <input type="text" value={search} 
+        onChange={(e)=>setSearch(e.target.value)}
+        placeholder="Search Anime"/>
+        <Button
+              className="search__button"
+              variant="primary"
+              style={{ backgroundColor: "#e50914" }}
+              onClick={()=>{
+                  history.push("/SearchResult/"+search)}}
+            >
+              Search 
+            </Button>
+        </form>
             <div style={{postion:"relative"}} className="upper__section">
                 <TopCarousel className="top__carousel"/>
             </div>

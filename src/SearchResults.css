@@ -1,0 +1,9 @@
+.search__results{
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.search__results h1{
+    padding: 10px;
+    background-color: black;
+}
