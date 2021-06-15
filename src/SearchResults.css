@@ -2,8 +2,15 @@
     margin: 0;
     color: white;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .search__results h1{
     padding: 10px;
     background-color: black;
+}
+.results{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }

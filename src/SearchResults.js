@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import apihandling from './apihandling'
 import SearchContainer from './SearchContainer'
 import "./SearchResults.css"
+import {Row} from "react-bootstrap"
 
 function SearchResults() {
     let {searchanime}=useParams()
@@ -21,13 +22,13 @@ function SearchResults() {
     return (
         <div className="search__results"> 
             <h1 style={{margin:"0"}}>{searchanime+"..."}</h1>
-            <div className="results">
+            <Row className="results">
             {media.map((x)=>(x.title.english && 
                 <SearchContainer image={x.coverImage.large} title={x.title.english}
-                    desc={x.description}
+                    desc={String(x.description)}
                 />
                 ))}
-            </div>
+            </Row>
         </div>
     )
 }

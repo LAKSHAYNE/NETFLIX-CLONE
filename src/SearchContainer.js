@@ -1,13 +1,14 @@
 import React from 'react'
 import "./SearchContainer.css"
+import {Col} from "react-bootstrap"
 
 function SearchContainer(props) {
     return (
-        <div className="search__contaniner">
+        <Col lg={3} md={4} sm={12} className="search__contaniner">
             <img src={props.image}/>
             <h5>{props.title}</h5>
             <p>{props.desc}</p>
-        </div>
+        </Col>
     )
 }
 
